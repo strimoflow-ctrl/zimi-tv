@@ -233,9 +233,9 @@ async function getTargetChannels() {
     } catch (e) {}
   }
 
-  // 3. Absolute Fallback to main channel only (Never use force-sub list)
+  // 3. Absolute Fallback to configured 4 channels
   if (list.length === 0) {
-    list = ['@landy_tv'];
+    list = ['@newhotcontent2026', '@hotvideooo2026', '@hotvideoo2026', '@seemahotveet'];
   }
 
   // Normalize channel IDs: ensure "@" prefix if not a numeric chat_id

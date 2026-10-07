@@ -3,7 +3,7 @@ const API_BASE = (typeof window !== 'undefined' && window.location.protocol.star
   ? `${window.location.origin}/api`
   : 'http://localhost:5000/api';
 
-const API_KEY = 'landyxcryvexsidhu5911';
+const API_KEY = 'zimitv_secret_key_2026';
 
 const defaultHeaders = {
   'Accept': 'application/json',

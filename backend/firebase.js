@@ -22,15 +22,21 @@ console.log(`[Firebase] Configured Database URL: ${DB_URL}`);
 
 // Default fallback settings if none in DB
 const DEFAULT_BOT_SETTINGS = {
-  welcomeText: "Welcome to Landy TV! 💦\n\nEnjoy streaming your favorite premium videos directly inside Telegram.\n\nClick the button below to start watching!",
-  lockMessage: "To access Landy TV and stream all premium uncut videos, you must join all official Telegram channels below:",
+  welcomeText: "Welcome to Zimi TV! 💦\n\nEnjoy streaming your favorite premium videos directly inside Telegram.\n\nClick the button below to start watching!",
+  lockMessage: "To access Zimi TV and stream all premium uncut videos, you must join all official Telegram channels below:",
   channels: [
-    { name: "📢 Join Uff Riya 💦", url: "https://t.me/uff_riya", username: "@uff_riya" },
-    { name: "📢 Join Viral InstaHub 🔥", url: "https://t.me/viral_instahub", username: "@viral_instahub" },
-    { name: "📢 Join Landy TV 🍿", url: "https://t.me/landy_tv", username: "@landy_tv" },
-    { name: "📢 Join Bet HP 💎", url: "https://t.me/bet_hp", username: "@bet_hp" }
+    { name: "📢 Join New Hot Content 🔥", url: "https://t.me/newhotcontent2026", username: "@newhotcontent2026" },
+    { name: "📢 Join Hot Videooo 💦", url: "https://t.me/hotvideooo2026", username: "@hotvideooo2026" },
+    { name: "📢 Join Hot Videoo 🍿", url: "https://t.me/hotvideoo2026", username: "@hotvideoo2026" },
+    { name: "📢 Join Seema Hot 💎", url: "https://t.me/seemahotveet", username: "@seemahotveet" }
   ],
-  supportUrl: "https://t.me/landy_tv",
+  postChannels: [
+    "@newhotcontent2026",
+    "@hotvideooo2026",
+    "@hotvideoo2026",
+    "@seemahotveet"
+  ],
+  supportUrl: "https://t.me/newhotcontent2026",
   channelLockEnabled: true
 };
 

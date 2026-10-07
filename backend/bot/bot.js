@@ -22,7 +22,7 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 dotenv.config({ path: path.join(__dirname, '../../.env') });
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
-const LANDY_BOT_USERNAME = (process.env.LANDY_BOT_USERNAME || 'landytv_bot').replace('@', '').trim();
+const LANDY_BOT_USERNAME = (process.env.BOT_USERNAME || process.env.LANDY_BOT_USERNAME || 'zimitv_bot').replace('@', '').trim();
 
 // Normalize WEB_APP_URL (ensure https:// if user passed domain only)
 let rawAppUrl = (process.env.WEB_APP_URL || 'http://localhost:5000').trim();
@@ -34,7 +34,7 @@ const WEB_APP_URL = rawAppUrl;
 console.log('🤖 Telegram Bot Service Initializing with dynamic Firebase channels...');
 
 // Clean user-requested Welcome Message
-const DEFAULT_WELCOME_MSG = `Welcome to Landy TV! 💦\n\nEnjoy streaming your favorite premium videos directly inside Telegram.\n\nClick the button below to start watching!`;
+const DEFAULT_WELCOME_MSG = `Welcome to Zimi TV! 💦\n\nEnjoy streaming your favorite premium videos directly inside Telegram.\n\nClick the button below to start watching!`;
 
 // Helper: Build Launch Buttons [ 📢 Join Channel ] [ 🎬 Watch Now ]
 function getAppLaunchButtons(appUrl) {
